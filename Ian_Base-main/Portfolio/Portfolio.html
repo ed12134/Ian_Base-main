@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edrian Aguilar Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav role="navigation" aria-label="Primary Navigation">
+      <div class="logo" tabindex="0">Ian_Cruz</div>
+      <div class="nav-links">
+        <a href="#about" tabindex="0">About</a>
+        <a href="#experience" tabindex="0">Experience</a>
+        <a href="#skills" tabindex="0">Skills</a>
+        <a href="#certificates" tabindex="0">Certificates</a>
+        <a href="#projects" tabindex="0">Projects</a>
+        <a href="#contact" tabindex="0">Contact</a>
+        <a href="Resume.html">Resume</a>
+
+      </div>
+      <button class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle dark/light theme" type="button" id="themeToggle" aria-pressed="false">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="hero" role="region" aria-label="Hero Section">
+      <h1>Hi, I'm Edrian Aguilar <br> Frontend Developer</h1>
+      <p>Delivering elegant, efficient web solutions that empower businesses. Explore my skills and projects to see how I can contribute to your team.</p>
+      <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" aria-label="Contact Me Button">Get in Touch</button>
+    </section>
+
+    <section id="about" role="region" aria-label="About Me Section" tabindex="0">
+      <h2>About Me</h2>
+      <p class="section-description">I am a detail-oriented frontend developer with 5+ years experience building accessible, user-friendly web applications using modern JavaScript frameworks and a strong design sense.</p>
+      <div class="about-card" tabindex="0">
+        Passionate about creating seamless and aesthetically pleasing digital experiences, I specialize in React, Vue, and plain JavaScript. I blend coding expertise with design principles to develop performant and scalable web apps that users love.
+      </div>
+    </section>
+
+    <section id="experience" role="region" aria-label="Professional Experience Section" tabindex="0">
+      <h2>Experience</h2>
+      <div class="experience-grid">
+        <article class="experience-card" tabindex="0">
+          <div class="experience-title">DICT PROGRAMMER INTERNSHIP</div>
+          <div class="experience-subtitle">Innovatech — July 2024 to Aug 2024</div>
+          <p class="experience-desc">
+            Developed a system named as "DATATRACK" for the Department of Information and Communications Technology (DICT) to track and manage IT assets. Utilized C#.net and SQL Server to create a user-friendly interface for asset management, improving efficiency by 30%. Collaborated with a team of developers to implement features such as asset tracking, reporting, and user authentication.
+          </p>
+        </article>
+        <article class="experience-card" tabindex="0">
+          <div class="experience-title">IT Supervisor</div>
+          <div class="experience-subtitle">Napintas Logistics and Distribution Inc. - August 2024 to Present</div>
+          <p class="experience-desc">
+            Managing Nestle Software and Hardware, including the installation and configuration of servers, workstations, and network devices. Ensuring the security and integrity of the company's IT infrastructure by implementing best practices for data protection and disaster recovery. Collaborating with cross-functional teams to identify and resolve technical issues, providing training and support to end-users.
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" role="region" aria-label="Skills Section" tabindex="0">
+      <h2>Skills</h2>
+      <p class="section-description">Technologies and tools I use to create clean, performant, and scalable web applications.</p>
+      <div class="skills-grid" aria-live="polite">
+        <div class="skill-card" tabindex="0" aria-label="Skill: HTML5">
+          <div class="skill-icon" aria-hidden="true" title="HTML5">🌐</div>
+          <div class="skill-name">HTML5</div>
+        </div>
+        <div class="skill-card" tabindex="0" aria-label="Skill: CSS3">
+          <div class="skill-icon" aria-hidden="true" title="CSS3">🎨</div>
+          <div class="skill-name">CSS3</div>
+        </div>
+        <div class="skill-card" tabindex="0" aria-label="Skill: JavaScript">
+          <div class="skill-icon" aria-hidden="true" title="JavaScript">⚡</div>
+          <div class="skill-name">JavaScript (ES6+)</div>
+        </div>
+        <div class="skill-card" tabindex="0" aria-label="Skill: Boostrap">
+          <div class="skill-icon" aria-hidden="true" title="Boostrap">⚛️</div>
+          <div class="skill-name">Boostrap</div>
+        </div>
+        <div class="skill-card" tabindex="0" aria-label="Skill: Vue">
+          <div class="skill-icon" aria-hidden="true" title="Vue.js">©️</div>
+          <div class="skill-name">C#</div>
+        </div>
+        <div class="skill-card" tabindex="0" aria-label="Skill: Node.js">
+          <div class="skill-icon" aria-hidden="true" title="Node.js">🌐</div>
+          <div class="skill-name">MySQL</div>
+        </div>
+        <div class="skill-card" tabindex="0" aria-label="Skill: Git">
+          <div class="skill-icon" aria-hidden="true" title="Git">🔧</div>
+          <div class="skill-name">Git & GitHub</div>
+        </div>
+      </div>
+    </section>
+    <!-- Certificates Section -->
+    <section id="certificates" role="region" aria-label="Certificates Section" tabindex="0">
+      <h2>Certificates</h2>
+      <p class="section-description">Recognized achievements that validate my expertise and commitment to professional growth.</p>
+      <div class="certificates-grid" aria-live="polite">
+        <article class="certificate-card" tabindex="0">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Advanced JavaScript Certificate" class="certificate-image" loading="lazy">
+          <div class="certificate-content">
+            <h3 class="certificate-title">Setting Up Computer Networks</h3>
+            <div class="certificate-issuer">
+              <span>TESDA</span>
+            </div>
+            <div class="certificate-date">Issued: July 2023</div>
+            <a href="#" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
+          </div>
+        </article>
+        
+        <article class="certificate-card" tabindex="0">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="React Developer Certificate" class="certificate-image" loading="lazy">
+          <div class="certificate-content">
+            <h3 class="certificate-title">Introduction to Computer System Servicing</h3>
+            <div class="certificate-issuer">
+              <span>TESDA</span>
+            </div>
+            <div class="certificate-date">Issued: July 2023</div>
+            <a href="#" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
+          </div>
+        </article>
+
+                <article class="certificate-card" tabindex="0">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="React Developer Certificate" class="certificate-image" loading="lazy">
+          <div class="certificate-content">
+            <h3 class="certificate-title">Setting Up Computer Servers</h3>
+            <div class="certificate-issuer">
+              <span>TESDA</span>
+            </div>
+            <div class="certificate-date">Issued: August 2023</div>
+            <a href="#" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
+          </div>
+        </article>
+
+                <article class="certificate-card" tabindex="0">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="React Developer Certificate" class="certificate-image" loading="lazy">
+          <div class="certificate-content">
+            <h3 class="certificate-title">Maintaining Computer System and Networks Course Completion</h3>
+            <div class="certificate-issuer">
+              <span>TESDA</span>
+            </div>
+            <div class="certificate-date">Issued: August 2023</div>
+            <a href="#" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
+          </div>
+        </article>
+
+                <article class="certificate-card" tabindex="0">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="React Developer Certificate" class="certificate-image" loading="lazy">
+          <div class="certificate-content">
+            <h3 class="certificate-title">Installing and Configuring Computer Systems</h3>
+            <div class="certificate-issuer">
+              <span>TESDA</span>
+            </div>
+            <div class="certificate-date">Issued: August 2023</div>
+            <a href="#" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
+          </div>
+        </article>
+
+                <article class="certificate-card" tabindex="0">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="React Developer Certificate" class="certificate-image" loading="lazy">
+          <div class="certificate-content">
+            <h3 class="certificate-title">Introduction to Cisco Packet Tracer</h3>
+            <div class="certificate-issuer">
+              <span>CISCO</span>
+            </div>
+            <div class="certificate-date">Issued: July 2023</div>
+            <a href="#" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
+          </div>
+        </article>
+        
+        <article class="certificate-card" tabindex="0">
+          <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=600&q=80" alt="Frontend Development Certificate" class="certificate-image" loading="lazy">
+          <div class="certificate-content">
+            <h3 class="certificate-title">Computer Hardware Basics</h3>
+            <div class="certificate-issuer">
+              <span>CISCO</span>
+            </div>
+            <div class="certificate-date">Issued: July 2023</div>
+            <a href="#" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
+          </div>
+        </article>
+
+                <article class="certificate-card" tabindex="0">
+          <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=600&q=80" alt="Frontend Development Certificate" class="certificate-image" loading="lazy">
+          <div class="certificate-content">
+            <h3 class="certificate-title">UI/UX for Beginners</h3>
+            <div class="certificate-issuer">
+              <span>Great Learning Academy</span>
+            </div>
+            <div class="certificate-date">Issued: August 2023</div>
+            <a href="#" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
+          </div>
+        </article>
+
+                <article class="certificate-card" tabindex="0">
+          <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=600&q=80" alt="Frontend Development Certificate" class="certificate-image" loading="lazy">
+          <div class="certificate-content">
+            <h3 class="certificate-title">Introduction to DevOps</h3>
+            <div class="certificate-issuer">
+              <span>IBM</span>
+            </div>
+            <div class="certificate-date">Issued: January 2024</div>
+            <a href="#" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
+          </div>
+        </article>
+
+        <article class="certificate-card" tabindex="0">
+          <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=600&q=80" alt="Frontend Development Certificate" class="certificate-image" loading="lazy">
+          <div class="certificate-content">
+            <h3 class="certificate-title">Google Cybersecurity Professional</h3>
+            <div class="certificate-issuer">
+              <span>GOOGLE</span>
+            </div>
+            <div class="certificate-date">Issued: March 2024</div>
+            <a href="#" class="certificate-link" target="_blank" rel="noopener">View Certificate</a>
+          </div>
+        </article>
+
+
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" role="region" aria-label="Projects Section" tabindex="0">
+      <h2>Projects</h2>
+      <p class="section-description">A few recent projects that demonstrate my capability to build quality web applications at scale.</p>
+      <div class="projects-grid" aria-live="polite">
+        <article class="project-card" tabindex="0" aria-label="Project: Portfolio Website">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Portfolio Website Screenshot" class="project-image" loading="lazy" />
+          <div class="project-content">
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-desc">Responsive portfolio site built with React and TailwindCSS demonstrating skills and projects with fast, accessible UI.</p>
+            <div class="project-links">
+              <a href="https://github.com/janedoe/portfolio" target="_blank" rel="noopener" class="project-link" aria-label="View Portfolio Website GitHub Repository">GitHub</a>
+              <a href="https://janedoe.dev" target="_blank" rel="noopener" class="project-link" aria-label="Visit Portfolio Website Live Demo">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" tabindex="0" aria-label="Project: Task Manager App">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Task Manager App Screenshot" class="project-image" loading="lazy" />
+          <div class="project-content">
+            <h3 class="project-title">DATATRACK</h3>
+            <p class="project-desc">A simple CRUD that converts file into QR code. To have a simple and paperless transactions.</p>
+            <div class="project-links">
+              <a href="https://github.com/janedoe/taskmanager" target="_blank" rel="noopener" class="project-link" aria-label="View Task Manager App GitHub Repository">GitHub</a>
+              <a href="https://task.janedoe.dev" target="_blank" rel="noopener" class="project-link" aria-label="Visit Task Manager App Live Demo">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" tabindex="0" aria-label="Project: Blog Platform">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Blog Platform Screenshot" class="project-image" loading="lazy" />
+          <div class="project-content">
+            <h3 class="project-title">UCU Landing Page</h3>
+            <p class="project-desc">A responsive university website built with HTML, CSS, JavaScript, and Bootstrap, featuring a modern design, smooth navigation, and key sections for programs, admissions, and campus updates.</p>
+            <div class="project-links">
+              <a href="https://github.com/janedoe/blogplatform" target="_blank" rel="noopener" class="project-link" aria-label="View Blog Platform GitHub Repository">GitHub</a>
+              <a href="https://blog.janedoe.dev" target="_blank" rel="noopener" class="project-link" aria-label="Visit Blog Platform Live Demo">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+                <article class="project-card" tabindex="0" aria-label="Project: Blog Platform">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Blog Platform Screenshot" class="project-image" loading="lazy" />
+          <div class="project-content">
+            <h3 class="project-title">Blog Platform</h3>
+            <p class="project-desc">Custom CMS and blog platform with markdown support and SEO optimization built with Next.js.</p>
+            <div class="project-links">
+              <a href="https://github.com/janedoe/blogplatform" target="_blank" rel="noopener" class="project-link" aria-label="View Blog Platform GitHub Repository">GitHub</a>
+              <a href="https://blog.janedoe.dev" target="_blank" rel="noopener" class="project-link" aria-label="Visit Blog Platform Live Demo">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+                <article class="project-card" tabindex="0" aria-label="Project: Blog Platform">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Blog Platform Screenshot" class="project-image" loading="lazy" />
+          <div class="project-content">
+            <h3 class="project-title">BUZZTRACK</h3>
+            <p class="project-desc">An Iot Bee enabled Monitoring System build in HTML, CSS, JavaScript, and C++ and MySQL for backend. Also Deploy on hosting sites.</p>
+            <div class="project-links">
+              <a href="https://github.com/janedoe/blogplatform" target="_blank" rel="noopener" class="project-link" aria-label="View Blog Platform GitHub Repository">GitHub</a>
+              <a href="https://blog.janedoe.dev" target="_blank" rel="noopener" class="project-link" aria-label="Visit Blog Platform Live Demo">Live Demo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" role="region" aria-label="Contact Section" tabindex="0">
+      <h2>Contact Me</h2>
+      <p class="section-description">If you are looking for a dedicated frontend developer to add value to your team, let's connect!</p>
+      <form class="contact-form" onsubmit="handleSubmit(event)" novalidate>
+        <div class="form-field">
+          <input type="text" id="name" name="name" required placeholder=" " aria-required="true" aria-describedby="nameHelp" />
+          <label for="name">Name</label>
+        </div>
+        <div class="form-field">
+          <input type="email" id="email" name="email" required placeholder=" " aria-required="true" aria-describedby="emailHelp" />
+          <label for="email">Email</label>
+        </div>
+        <div class="form-field">
+          <textarea id="message" name="message" required placeholder=" " rows="5" aria-required="true" aria-describedby="messageHelp"></textarea>
+          <label for="message">Message</label>
+        </div>
+        <button type="submit" class="btn-submit" aria-label="Send Message Button">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <script>
+    
+// Updated smooth scroll script to exclude external links
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        // Skip if it's an external link or has target="_blank"
+        if (link.href.startsWith('http') || link.target === '_blank' || link.getAttribute('href').startsWith('mailto:')) {
+          return;
+        }
+        
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const target = document.getElementById(targetId);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+          target.focus({preventScroll:true});
+        }
+      });
+    });
+
+    // Theme toggler: toggle dark/light theme with localStorage persistence
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    function setTheme(theme) {
+      if (theme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        themeToggleBtn.textContent = '☀️';
+        themeToggleBtn.setAttribute('aria-pressed', 'true');
+      } else {
+        document.documentElement.removeAttribute('data-theme');
+        themeToggleBtn.textContent = '🌙';
+        themeToggleBtn.setAttribute('aria-pressed', 'false');
+      }
+      localStorage.setItem('theme', theme);
+    }
+    
+    function toggleTheme() {
+      const currentTheme = localStorage.getItem('theme') || 
+                         (prefersDarkScheme.matches ? 'dark' : 'light');
+      setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+    }
+    
+    // Initialize theme
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      setTheme(savedTheme);
+    } else if (prefersDarkScheme.matches) {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+    
+    themeToggleBtn.addEventListener('click', toggleTheme);
+
+    // Contact form submission handler
+    function handleSubmit(event) {
+      event.preventDefault();
+      const form = event.target;
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
+
+      if (!name || !email || !message) {
+        alert('Please fill out all fields before submitting.');
+        return;
+      }
+
+      // Very basic email format validation
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      alert('Thank you for reaching out, ' + name + '! Your message has been received.');
+      form.reset();
+    }
+  </script>
+
+  <footer>
+    <div class="social-links" role="region" aria-label="Social Media Links">
+      <a href="https://github.com/ed12134" target="_blank" rel="noopener" aria-label="GitHub Profile" tabindex="0">🐙</a>
+      <a href="https://linkedin.com/in/janedoe" target="_blank" rel="noopener" aria-label="LinkedIn Profile" tabindex="0">🔗</a>
+      <a href="https://twitter.com/janedoe" target="_blank" rel="noopener" aria-label="Twitter Profile" tabindex="0">🐦</a>
+    </div>
+    &copy; 2025 Ian_Cruz. All rights reserved.
+  </footer>

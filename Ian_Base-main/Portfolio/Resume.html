@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edrian Aguilar - Computer Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #3b82f6;  /* Blue from portfolio */
+            --secondary: #10b981;  /* Emerald from portfolio */
+            --accent: #ef4444;  /* Red from portfolio */
+            --light: #f3f4f6;  /* Light gray from portfolio */
+            --dark: #1f2937;  /* Dark gray from portfolio */
+            --gray: #6b7280;  /* Medium gray from portfolio */
+            --header-bg: rgba(59, 130, 246, 0.8);  /* Semi-transparent blue */
+            --bg-color: #f9fafb;  /* Very light gray from portfolio */
+            --text-color: #1f2937;  /* Dark gray from portfolio */
+            --card-bg: white;
+            --highlight-bg: rgba(59, 130, 246, 0.1);
+            --border-color: #e5e7eb;  /* Light border from portfolio */
+        }
+
+        [data-theme="dark"] {
+            --primary: #60a5fa;  /* Lighter blue for dark mode */
+            --secondary: #34d399;  /* Lighter emerald for dark mode */
+            --accent: #f87171;  /* Lighter red for dark mode */
+            --light: #374151;  /* Darker gray */
+            --dark: #f9fafb;  /* Light text */
+            --gray: #9ca3af;  /* Lighter gray */
+            --header-bg: rgba(37, 99, 235, 0.8);  /* Darker blue */
+            --bg-color: #111827;  /* Very dark background */
+            --text-color: #f9fafb;  /* Light text */
+            --card-bg: #1f2937;  /* Dark card background */
+            --highlight-bg: rgba(16, 185, 129, 0.2);  /* Emerald highlight */
+            --border-color: #374151;  /* Dark border */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--bg-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        .resume-container {
+            background-color: var(--card-bg);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+        
+        .header {
+            background-color: var(--header-bg);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: background-color 0.3s ease;
+        }
+        
+        .header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, var(--header-bg), rgba(16, 185, 129, 0.6));
+            z-index: -1;
+        }
+        
+        h1 {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 2.8rem;
+            margin: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+        
+        .title {
+            font-size: 1.3rem;
+            margin: 10px 0;
+            letter-spacing: 1px;
+            font-weight: 400;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        
+        .contact-info {
+            margin-top: 15px;
+            font-size: 0.95rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .content {
+            padding: 30px;
+            background-color: var(--card-bg);
+            transition: background-color 0.3s ease;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        h2 {
+            font-family: 'Roboto Condensed', sans-serif;
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--border-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .job, .education-item, .certification {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid var(--secondary);
+            position: relative;
+            transition: border-color 0.3s ease;
+        }
+        
+        .job::before, .education-item::before, .certification::before {
+            content: "";
+            position: absolute;
+            left: -6px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--secondary);
+            transition: background-color 0.3s ease;
+        }
+        
+        .job-title, .education-degree, .certification-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--text-color);
+            transition: color 0.3s ease;
+        }
+        
+        .company, .school, .certification-org {
+            font-weight: 500;
+            color: var(--accent);
+            margin: 5px 0;
+            transition: color 0.3s ease;
+        }
+        
+        .date {
+            color: var(--gray);
+            font-size: 0.9rem;
+            font-style: italic;
+            transition: color 0.3s ease;
+        }
+        
+        ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            position: relative;
+            color: var(--text-color);
+            transition: color 0.3s ease;
+        }
+        
+        li::before {
+            content: "▹";
+            position: absolute;
+            left: -15px;
+            color: var(--secondary);
+            transition: color 0.3s ease;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .skill-category {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .skill-item {
+            margin-bottom: 10px;
+        }
+        
+        .skill-name {
+            font-weight: 500;
+            color: var(--text-color);
+            transition: color 0.3s ease;
+        }
+        
+        .skill-level {
+            color: var(--gray);
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .highlight {
+            background-color: var(--highlight-bg);
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 3px solid var(--secondary);
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .two-column {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .column {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .theme-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        /* Back button styles */
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: var(--card-bg);
+            color: var(--primary);
+            border: 1px solid var(--border-color);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        
+        .back-button:hover {
+            transform: scale(1.1);
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            
+            .resume-container {
+                box-shadow: none;
+                border: none;
+            }
+            
+            .header {
+                background-color: #3b82f6 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+            .theme-toggle, .back-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Back Button -->
+    <a href="Portfolio.html" class="back-button" aria-label="Go back to portfolio">←</a>
+    
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
+
+    <div class="resume-container">
+        <div class="header">
+            <h1>EDRIAN AGUILAR</h1>
+            <div class="title">COMPUTER ENGINEER</div>
+            <div class="contact-info">
+                <span>📍 Sitio Labbon, Bray. San Fermin Caba, La Union</span>
+                <span>📞 09611403229</span>
+                <span>✉️ aguilaredrian26@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="two-column">
+                <div class="column">
+                    <div class="section">
+                        <h2>WORK EXPERIENCE</h2>
+                        <div class="job">
+                            <div class="job-title">IT Supervisor</div>
+                            <div class="company">Napinstas Logistics & Distribution Incorporated</div>
+                            <div class="date">August 2024 - Current</div>
+                            <ul>
+                                <li>Server Administration</li>
+                                <li>Logistics System Support</li>
+                                <li>Computer Hardware Troubleshooting</li>
+                                <li>System Monitoring and Maintenance</li>
+                                <li>Data Security and Backups</li>
+                                <li>Training and Documentation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>EDUCATION</h2>
+                        <div class="education-item">
+                            <div class="education-degree">Bachelor of Science in Computer Engineering</div>
+                            <div class="school">Lorma Colleges</div>
+                            <div class="date">2020 - 2024</div>
+                            <div class="highlight">
+                                <strong>Achievements:</strong> Dean's List (1st and 2nd Year), Half Scholar (3rd-4th Year)<br>
+                                <strong>Certification:</strong> BOSH Safety Officer 1 (2023)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="section">
+                        <h2>CERTIFICATIONS</h2>
+                        <div class="certification">
+                            <div class="certification-title">Google Cybersecurity Certificate</div>
+                            <div class="certification-org">Google</div>
+                            <div class="date">2023 - 2024</div>
+                            <ul>
+                                <li>Introduction to Cybersecurity Foundations</li>
+                                <li>Manage Security Risks</li>
+                                <li>Network and Network Security</li>
+                                <li>Linux and SQL</li>
+                                <li>Assets, Threats and Vulnerabilities</li>
+                                <li>Detection and Response</li>
+                                <li>Automate Cybersecurity Tasks with Python</li>
+                            </ul>
+                        </div>
+
+                        <div class="certification">
+                            <div class="certification-title">Computer System Servicing</div>
+                            <div class="certification-org">TESDA</div>
+                            <div class="date">July 2023 - August 2023</div>
+                        </div>
+
+                        <div class="certification">
+                            <div class="certification-title">Cisco Networking Academy</div>
+                            <div class="certification-org">Cisco</div>
+                            <div class="date">May 2023 - August 2023</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>EXPERTISE & SKILLS</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <div class="skill-item">
+                            <div class="skill-name">IT Management</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Server Administration</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Computer Hardware</div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="skill-item">
+                            <div class="skill-name">C# (.Net)</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Front End Development</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">UI/UX Design</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="skill-item">
+                            <div class="skill-name">Microsoft Office</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Cisco Packet Tracer</div>
+                            <div class="skill-level">Intermediate</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Network Security</div>
+                            <div class="skill-level">Advanced</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Theme toggler functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        const currentTheme = localStorage.getItem('theme');
+        
+        // Set initial theme
+        if (currentTheme === 'dark' || (!currentTheme && prefersDarkScheme.matches)) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            themeToggle.textContent = '☀️';
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            themeToggle.textContent = '🌙';
+        }
+        
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            if (currentTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+                themeToggle.textContent = '🌙';
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                themeToggle.textContent = '☀️';
+            }
+        });
+    </script>
+</body>
+</html>
