@@ -77,10 +77,6 @@ Here are the technologies used in the Ian_Base project:
   - ![Bootstrap](https://img.icons8.com/color/48/000000/bootstrap.png) Bootstrap
   - ![React](https://img.icons8.com/color/48/000000/react-native.png) React
 
-- **Backend**: 
-  - ![C#](https://img.icons8.com/color/48/000000/c-sharp-logo.png) C#
-  - ![MySQL](https://img.icons8.com/color/48/000000/mysql.png) MySQL
-
 - **Version Control**: 
   - ![Git](https://img.icons8.com/color/48/000000/git.png) Git
 
