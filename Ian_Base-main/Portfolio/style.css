@@ -3,7 +3,7 @@
       --color-text-primary: #111827;
       --color-text-secondary: #6b7280;
       --color-accent: #111827;
-      --color-accent-hover: #3b82f6;
+      --color-accent-hover: #00358b;
       --color-shadow-light: rgba(17, 24, 39, 0.06);
       --color-shadow-dark: rgba(17, 24, 39, 0.12);
       --radius: 12px;
@@ -24,9 +24,9 @@
       --color-text-primary: #40658a;
       --color-text-secondary: #9ca3af;
       --color-accent: #3b82f6;
-      --color-accent-hover: #60a5fa;
-      --color-shadow-light: rgba(255 255 255 / 0.06);
-      --color-shadow-dark: rgba(255 255 255 / 0.12);
+      --color-accent-hover: #2c78d4;
+      --color-shadow-light: rgba(65, 57, 57, 0.06);
+      --color-shadow-dark: rgba(191, 168, 168, 0.12);
     }
 
     @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@600;700;800&display=swap');
@@ -309,6 +309,7 @@
     }
 
     /* Skills */
+    /* Skills */
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
@@ -317,36 +318,39 @@
       margin-left: auto;
       margin-right: auto;
     }
+
     .skill-card {
       background: var(--color-bg);
       border-radius: var(--radius);
-      box-shadow:
-        0 10px 15px var(--color-shadow-light);
-      padding: 2.25rem 2rem;
+      box-shadow: 0 10px 15px var(--color-shadow-light);
+      padding: 2rem 1.5rem;
       text-align: center;
       cursor: default;
       transition: box-shadow var(--transition) ease-in-out, transform var(--transition);
       user-select: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .skill-card:hover,
-    .skill-card:focus {
-      box-shadow:
-        0 15px 30px rgba(59, 130, 246, 0.25);
-      outline: none;
-      transform: translateY(-4px);
-    }
+
     .skill-icon {
+      width: 60px;
+      height: 60px;
       margin-bottom: 1.4rem;
-      font-size: 3.4rem;
-      color: var(--color-accent);
-      user-select: none;
-      letter-spacing: 0.05em;
+      object-fit: contain;
+      transition: transform 0.3s ease;
     }
+
     .skill-name {
       font-weight: 700;
       font-size: 1.2rem;
       color: var(--color-text-primary);
       user-select: none;
+    }
+
+    .skill-card:hover .skill-icon,
+    .skill-card:focus .skill-icon {
+      transform: scale(1.1);
     }
 
     /* Certificates */
@@ -617,7 +621,7 @@
       outline: none;
     }
 
-    /* Footer */
+        /* Footer */
     footer {
       text-align: center;
       padding: 2rem 1rem;
@@ -627,72 +631,28 @@
       user-select: none;
       font-weight: 500;
     }
+
     .social-links {
       margin-bottom: 1rem;
       display: flex;
       justify-content: center;
       gap: 1.8rem;
-      font-size: 1.6rem;
-      color: var(--color-text-secondary);
       transition: color var(--transition);
     }
-    .social-links a {
-      border-radius: 50%;
-      padding: 0.2rem;
-      transition: transform 0.25s ease, color var(--transition);
+
+    .social-icon {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      transition: transform 0.25s ease, filter var(--transition);
+      filter: grayscale(30%) brightness(0.8);
     }
-    .social-links a:hover,
-    .social-links a:focus {
-      color: var(--color-accent-hover);
+
+    .social-links a:hover .social-icon,
+    .social-links a:focus .social-icon {
       transform: scale(1.2);
+      filter: grayscale(0%) brightness(1);
       outline: none;
-    }
-        /* Modal styles */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      padding-top: 50px;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0,0,0,0.9);
-    }
-    
-    .modal-content {
-      margin: auto;
-      display: block;
-      max-width: 80%;
-      max-height: 80vh;
-      border: 2px solid #fff;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    }
-    
-    #caption {
-      margin: 15px auto;
-      display: block;
-      width: 80%;
-      max-width: 700px;
-      text-align: center;
-      color: #fff;
-      padding: 10px 0;
-    }
-    
-    .close {
-      position: absolute;
-      top: 15px;
-      right: 35px;
-      color: #f1f1f1;
-      font-size: 40px;
-      font-weight: bold;
-      transition: 0.3s;
-      cursor: pointer;
-    }
-    
-    .close:hover {
-      color: #bbb;
     }
     
     /* Certificate link style */
