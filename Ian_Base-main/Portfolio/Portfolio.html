@@ -13,7 +13,7 @@
   <header>
     <nav role="navigation" aria-label="Primary Navigation">
       <div class="logo" tabindex="0">Ian_Cruz</div>
-      <div class="nav-links">
+      <div class="nav-links" id="navLinks">
         <a href="#about" tabindex="0">About</a>
         <a href="#experience" tabindex="0">Experience</a>
         <a href="#skills" tabindex="0">Skills</a>
@@ -21,8 +21,12 @@
         <a href="#projects" tabindex="0">Projects</a>
         <a href="#contact" tabindex="0">Contact</a>
         <a href="Resume.html">Resume</a>
-
       </div>
+      <button class="hamburger" aria-label="Toggle navigation menu" type="button" id="hamburger" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
       <button class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle dark/light theme" type="button" id="themeToggle" aria-pressed="false">🌙</button>
     </nav>
   </header>
@@ -101,8 +105,58 @@
       <h2>Certificates</h2>
       <p class="section-description">Recognized achievements that validate my expertise and commitment to professional growth.</p>
       <div class="certificates-grid" aria-live="polite">
+      <!-- CISCO & GOOGLE -->
       <article class="certificate-card" tabindex="0">
-        <img src="Images/CERTIFICATES/Setting Up Computer Networks.jpg" alt="Introduction to Computer System Servicing Certificate" class="certificate-image" loading="lazy">
+        <img src="Images/CERTIFICATES/Introduction_to_Packet_Tracer_certificate_edrian-aguilar-lorma-edu_33f2a6fe-d48c-4f5b-aa4d-b4c667b31a2c_page-0001.jpg" alt="Introduction to Cisco Packet Tracer Certificate" class="certificate-image" loading="lazy">
+        <div class="certificate-content">
+          <h3 class="certificate-title">Introduction to Cisco Packet Tracer</h3>
+          <div class="certificate-issuer">
+            <span>CISCO</span>
+          </div>
+          <div class="certificate-date">Issued: July 2023</div>
+          <a href="#" class="certificate-link view-certificate" data-image="Images/CERTIFICATES/Introduction_to_Packet_Tracer_certificate_edrian-aguilar-lorma-edu_33f2a6fe-d48c-4f5b-aa4d-b4c667b31a2c_page-0001.jpg" data-title="Introduction to Cisco Packet Tracer" data-issuer="CISCO" data-date="July 2023">View Certificate</a>
+        </div>
+      </article>
+
+      <article class="certificate-card" tabindex="0">
+        <img src="Images/CERTIFICATES/Computer_Hardware_Basics_certificate_edrian-aguilar-lorma-edu_0a683fb4-3116-498e-9bf9-512137d5e52d_page-0001.jpg" alt="Computer Hardware Basics Certificate" class="certificate-image" loading="lazy">
+        <div class="certificate-content">
+          <h3 class="certificate-title">Computer Hardware Basics</h3>
+          <div class="certificate-issuer">
+            <span>CISCO</span>
+          </div>
+          <div class="certificate-date">Issued: July 2023</div>
+          <a href="#" class="certificate-link view-certificate" data-image="Images/CERTIFICATES/Computer_Hardware_Basics_certificate_edrian-aguilar-lorma-edu_0a683fb4-3116-498e-9bf9-512137d5e52d_page-0001.jpg" data-title="Computer Hardware Basics" data-issuer="CISCO" data-date="July 2023">View Certificate</a>
+        </div>
+      </article>
+
+      <article class="certificate-card" tabindex="0">
+        <img src="Images/CERTIFICATES/OperatingSystemsBasicsUpdate20250323-26-9rfta1_page-0001.jpg" alt="Operating System and Basic Certificate" class="certificate-image" loading="lazy">
+        <div class="certificate-content">
+          <h3 class="certificate-title">Operating System and Basic</h3>
+          <div class="certificate-issuer">
+            <span>CISCO</span>
+          </div>
+          <div class="certificate-date">Issued: August 2023</div>
+          <a href="#" class="certificate-link view-certificate" data-image="Images/CERTIFICATES/OperatingSystemsBasicsUpdate20250323-26-9rfta1_page-0001.jpg" data-title="Operating System and Basic" data-issuer="CISCO" data-date="August 2023">View Certificate</a>
+        </div>
+      </article>
+
+      <article class="certificate-card" tabindex="0">
+        <img src="Images/CERTIFICATES/Google Cybersecurity Professional Certificate _page-0001.jpg" alt="Google Cybersecurity Professional Certificate" class="certificate-image" loading="lazy">
+        <div class="certificate-content">
+          <h3 class="certificate-title">Google Cybersecurity Professional</h3>
+          <div class="certificate-issuer">
+            <span>GOOGLE</span>
+          </div>
+          <div class="certificate-date">Issued: August 2023</div>
+          <a href="#" class="certificate-link view-certificate" data-image="Images/CERTIFICATES/Google Cybersecurity Professional Certificate _page-0001.jpg" data-title="Google Cybersecurity Professional" data-issuer="GOOGLE" data-date="August 2023">View Certificate</a>
+        </div>
+      </article>
+
+      <!-- TESDA -->
+      <article class="certificate-card" tabindex="0">
+        <img src="Images/CERTIFICATES/Setting Up Computer Networks.jpg" alt="Setting Up Computer Networks Certificate" class="certificate-image" loading="lazy">
         <div class="certificate-content">
           <h3 class="certificate-title">Setting Up Computer Networks</h3>
           <div class="certificate-issuer">
@@ -112,7 +166,7 @@
           <a href="#" class="certificate-link view-certificate" data-image="Images/CERTIFICATES/Setting Up Computer Networks.jpg" data-title="Setting Up Computer Networks" data-issuer="TESDA" data-date="July 2023">View Certificate</a>
         </div>
       </article>
-       
+
       <article class="certificate-card" tabindex="0">
         <img src="Images/CERTIFICATES/CSS.jpg" alt="Introduction to Computer System Servicing Certificate" class="certificate-image" loading="lazy">
         <div class="certificate-content">
@@ -126,19 +180,19 @@
       </article>
 
       <article class="certificate-card" tabindex="0">
-        <img src="Images/CERTIFICATES/Setting Up Computer Servers.jpg" alt="Introduction to Computer System Servicing Certificate" class="certificate-image" loading="lazy">
+        <img src="Images/CERTIFICATES/Setting Up Computer Servers.jpg" alt="Setting Up Computer Servers Certificate" class="certificate-image" loading="lazy">
         <div class="certificate-content">
-          <h3 class="certificate-title">Introduction to Computer System Servers</h3>
+          <h3 class="certificate-title">Setting Up Computer Servers</h3>
           <div class="certificate-issuer">
             <span>TESDA</span>
           </div>
           <div class="certificate-date">Issued: August 2023</div>
-          <a href="#" class="certificate-link view-certificate" data-image="Images/CERTIFICATES/Setting Up Computer Servers.jpg" data-title="Introduction to Computer System Servers" data-issuer="TESDA" data-date="August 2023">View Certificate</a>
+          <a href="#" class="certificate-link view-certificate" data-image="Images/CERTIFICATES/Setting Up Computer Servers.jpg" data-title="Setting Up Computer Servers" data-issuer="TESDA" data-date="August 2023">View Certificate</a>
         </div>
       </article>
 
       <article class="certificate-card" tabindex="0">
-        <img src="Images/CERTIFICATES/Maintaining Computer Systems.jpg" alt="Introduction to Computer System Servicing Certificate" class="certificate-image" loading="lazy">
+        <img src="Images/CERTIFICATES/Maintaining Computer Systems.jpg" alt="Maintaining Computer Systems Certificate" class="certificate-image" loading="lazy">
         <div class="certificate-content">
           <h3 class="certificate-title">Maintaining Computer System and Networks</h3>
           <div class="certificate-issuer">
@@ -149,44 +203,21 @@
         </div>
       </article>
 
+      <!-- TESDA & Others -->
       <article class="certificate-card" tabindex="0">
-        <img src="Images/CERTIFICATES/Maintaining Computer Systems.jpg" alt="Introduction to Computer System Servicing Certificate" class="certificate-image" loading="lazy">
+        <img src="Images/CERTIFICATES/Installing and COnfiguring.jpg" alt="Installing and Configuring Computer Systems Certificate" class="certificate-image" loading="lazy">
         <div class="certificate-content">
           <h3 class="certificate-title">Installing and Configuring Computer Systems</h3>
           <div class="certificate-issuer">
             <span>TESDA</span>
           </div>
           <div class="certificate-date">Issued: August 2023</div>
-          <a href="#" class="certificate-link view-certificate" data-image="Images/CERTIFICATES/Maintaining Computer Systems.jpg" data-title="Installing and Configuring Computer Systems" data-issuer="TESDA" data-date="August 2023">View Certificate</a>
-        </div>
-      </article>
-  
-      <article class="certificate-card" tabindex="0">
-        <img src="Images/CERTIFICATES/Introduction_to_Packet_Tracer_certificate_edrian-aguilar-lorma-edu_33f2a6fe-d48c-4f5b-aa4d-b4c667b31a2c_page-0001.jpg" alt="Introduction to Computer System Servicing Certificate" class="certificate-image" loading="lazy">
-        <div class="certificate-content">
-          <h3 class="certificate-title">Introduction to Cisco Packet Tracer</h3>
-          <div class="certificate-issuer">
-            <span>CISCO</span>
-          </div>
-          <div class="certificate-date">Issued: July 2023</div>
-          <a href="#" class="certificate-link view-certificate" data-image="Images/CERTIFICATES/Introduction_to_Packet_Tracer_certificate_edrian-aguilar-lorma-edu_33f2a6fe-d48c-4f5b-aa4d-b4c667b31a2c_page-0001.jpg" data-title="Introduction to Cisco Packet Tracer" data-issuer="CISCO" data-date="July 2023">View Certificate</a>
-        </div>
-      </article>
-      
-      <article class="certificate-card" tabindex="0">
-        <img src="Images/CERTIFICATES/Computer_Hardware_Basics_certificate_edrian-aguilar-lorma-edu_0a683fb4-3116-498e-9bf9-512137d5e52d_page-0001.jpg" alt="Introduction to Computer System Servicing Certificate" class="certificate-image" loading="lazy">
-        <div class="certificate-content">
-          <h3 class="certificate-title">Computer Hardware Basics</h3>
-          <div class="certificate-issuer">
-            <span>CISCO</span>
-          </div>
-          <div class="certificate-date">Issued: July 2023</div>
-          <a href="#" class="certificate-link view-certificate" data-image="Images/CERTIFICATES/Computer_Hardware_Basics_certificate_edrian-aguilar-lorma-edu_0a683fb4-3116-498e-9bf9-512137d5e52d_page-0001.jpg" data-title="Computer Hardware Basics" data-issuer="CISCO" data-date="July 2023">View Certificate</a>
+          <a href="#" class="certificate-link view-certificate" data-image="Images/CERTIFICATES/Installing and COnfiguring.jpg" data-title="Installing and Configuring Computer Systems" data-issuer="TESDA" data-date="August 2023">View Certificate</a>
         </div>
       </article>
 
       <article class="certificate-card" tabindex="0">
-        <img src="Images/CERTIFICATES/UIUX.jpg" alt="Introduction to Computer System Servicing Certificate" class="certificate-image" loading="lazy">
+        <img src="Images/CERTIFICATES/UIUX.jpg" alt="UI/UX for Beginners Certificate" class="certificate-image" loading="lazy">
         <div class="certificate-content">
           <h3 class="certificate-title">UI/UX for Beginners</h3>
           <div class="certificate-issuer">
@@ -198,122 +229,87 @@
       </article>
 
       <article class="certificate-card" tabindex="0">
-        <img src="Images/CERTIFICATES/OperatingSystemsBasicsUpdate20250323-26-9rfta1_page-0001.jpg" alt="Introduction to Computer System Servicing Certificate" class="certificate-image" loading="lazy">
-        <div class="certificate-content">
-          <h3 class="certificate-title">Operating System and Basic</h3>
-          <div class="certificate-issuer">
-            <span>CISCO</span>
-          </div>
-          <div class="certificate-date">Issued: August 2023</div>
-          <a href="#" class="certificate-link view-certificate" data-image="Images/CERTIFICATES/OperatingSystemsBasicsUpdate20250323-26-9rfta1_page-0001.jpg" data-title="Operating System and Basic" data-issuer="TESDA" data-date="March 2025">View Certificate</a>
-        </div>
-      </article>
-
-      <article class="certificate-card" tabindex="0">
-        <img src="Images/CERTIFICATES/Google Cybersecurity Professional Certificate _page-0001.jpg" alt="Introduction to Computer System Servicing Certificate" class="certificate-image" loading="lazy">
-        <div class="certificate-content">
-          <h3 class="certificate-title">Google Cybersecurity Professional</h3>
-          <div class="certificate-issuer">
-            <span>GOOGLE</span>
-          </div>
-          <div class="certificate-date">Issued: August 2023</div>
-          <a href="#" class="certificate-link view-certificate" data-image="Images/CERTIFICATES/Google Cybersecurity Professional Certificate _page-0001.jpg" data-title="Google Cybersecurity Professional" data-issuer="TESDA" data-date="March 2023">View Certificate</a>
-        </div>
-      </article>
-
-      <article class="certificate-card" tabindex="0">
-        <img src="Images/CERTIFICATES/TEXH FOR EVERYONE.JPG" alt="Introduction to Computer System Servicing Certificate" class="certificate-image" loading="lazy">
+        <img src="Images/CERTIFICATES/TEXH FOR EVERYONE.JPG" alt="Tech For Everyone Certificate" class="certificate-image" loading="lazy">
         <div class="certificate-content">
           <h3 class="certificate-title">Tech For Everyone</h3>
           <div class="certificate-issuer">
             <span>SOLOLEARN</span>
           </div>
           <div class="certificate-date">Issued: February 2025</div>
-          <a href="#" class="certificate-link view-certificate" data-image="Images/CERTIFICATES/TEXH FOR EVERYONE.JPG" data-title="Tech For Everyone" data-issuer="TESDA" data-date="February 2025">View Certificate</a>
+          <a href="#" class="certificate-link view-certificate" data-image="Images/CERTIFICATES/TEXH FOR EVERYONE.JPG" data-title="Tech For Everyone" data-issuer="SOLOLEARN" data-date="February 2025">View Certificate</a>
         </div>
       </article>
-
-
-        </article>
-          <!-- The Modal -->
-          <div id="certificateModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="modalCertificateImage" alt="Certificate">
-            <div id="caption">
-              <h3 id="modalTitle"></h3>
-              <p>Issued by <span id="modalIssuer"></span> - <span id="modalDate"></span></p>
-            </div>
-          </div>
-
-
       </div>
-    </section>
-    <!-- Projects Section -->
-    <section id="projects" role="region" aria-label="Projects Section" tabindex="0">
-      <h2>Projects</h2>
-      <p class="section-description">A few recent projects that demonstrate my capability to build quality web applications at scale.</p>
-      <div class="projects-grid" aria-live="polite">
-        <article class="project-card" tabindex="0" aria-label="Project: Portfolio Website">
-          <img src="Images/FRONT PAGE/Portfoliopng.png" alt="Portfolio Website Screenshot" class="project-image" loading="lazy" />
-          <div class="project-content">
-            <h3 class="project-title">Portfolio Website</h3>
-            <p class="project-desc">Responsive portfolio site built with React and TailwindCSS demonstrating skills and projects with fast, accessible UI.</p>
-            <div class="project-links">
-              <a href="https://github.com/ed12134/Ian_Base-main/tree/main/Ian_Base-main" target="_blank" rel="noopener" class="project-link" aria-label="View Portfolio Website GitHub Repository">GitHub</a>
-              <a href="https://janedoe.dev" target="_blank" rel="noopener" class="project-link" aria-label="Visit Portfolio Website Live Demo">Live Demo</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card" tabindex="0" aria-label="Project: Task Manager App">
-          <img src="Images/FRONT PAGE/DATATRACK.png" alt="Task Manager App Screenshot" class="project-image" loading="lazy" />
-          <div class="project-content">
-            <h3 class="project-title">DATATRACK</h3>
-            <p class="project-desc">A simple CRUD that converts file into QR code. To have a simple and paperless transactions.</p>
-            <div class="project-links">
-              <a href="https://github.com/ed12134/Ian_Base-main/tree/main/Ian_Base-main" target="_blank" rel="noopener" class="project-link" aria-label="View Task Manager App GitHub Repository">GitHub</a>
-              <a href="https://task.janedoe.dev" target="_blank" rel="noopener" class="project-link" aria-label="Visit Task Manager App Live Demo">Live Demo</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card" tabindex="0" aria-label="Project: Blog Platform">
-          <img src="Images/FRONT PAGE/UCU MOCKUP.png" alt="Blog Platform Screenshot" class="project-image" loading="lazy" />
-          <div class="project-content">
-            <h3 class="project-title">UCU Landing Page</h3>
-            <p class="project-desc">A responsive university website built with HTML, CSS, JavaScript, and Bootstrap, featuring a modern design, smooth navigation, and key sections for programs, admissions, and campus updates.</p>
-            <div class="project-links">
-              <a href="https://github.com/ed12134/Ian_Base-main/tree/main/Ian_Base-main" target="_blank" rel="noopener" class="project-link" aria-label="View Blog Platform GitHub Repository">GitHub</a>
-              <a href="https://blog.janedoe.dev" target="_blank" rel="noopener" class="project-link" aria-label="Visit Blog Platform Live Demo">Live Demo</a>
-            </div>
-          </div>
-        </article>
-
-                <article class="project-card" tabindex="0" aria-label="Project: Blog Platform">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Blog Platform Screenshot" class="project-image" loading="lazy" />
-          <div class="project-content">
-            <h3 class="project-title">Blog Platform</h3>
-            <p class="project-desc">Custom CMS and blog platform with markdown support and SEO optimization built with Next.js.</p>
-            <div class="project-links">
-              <a href="https://github.com/ed12134/Ian_Base-main/tree/main/Ian_Base-main" target="_blank" rel="noopener" class="project-link" aria-label="View Blog Platform GitHub Repository">GitHub</a>
-              <a href="https://blog.janedoe.dev" target="_blank" rel="noopener" class="project-link" aria-label="Visit Blog Platform Live Demo">Live Demo</a>
-            </div>
-          </div>
-        </article>
-
-                <article class="project-card" tabindex="0" aria-label="Project: Blog Platform">
-          <img src="Images/FRONT PAGE/BUZZTRACK.png" alt="Blog Platform Screenshot" class="project-image" loading="lazy" />
-          <div class="project-content">
-            <h3 class="project-title">BUZZTRACK</h3>
-            <p class="project-desc">An Iot Bee enabled Monitoring System build in HTML, CSS, JavaScript, and C++ and MySQL for backend. Also Deploy on hosting sites.</p>
-            <div class="project-links">
-              <a href="https://github.com/ed12134/Ian_Base-main/tree/main/Ian_Base-main" target="_blank" rel="noopener" class="project-link" aria-label="View Blog Platform GitHub Repository">GitHub</a>
-              <a href="https://blog.janedoe.dev" target="_blank" rel="noopener" class="project-link" aria-label="Visit Blog Platform Live Demo">Live Demo</a>
-            </div>
-          </div>
-        </article>
+    </div>
+  </section>
+<!-- Projects Section -->
+<section id="projects" role="region" aria-label="Projects Section" tabindex="0">
+  <h2>Projects</h2>
+  <p class="section-description">A few recent projects that demonstrate my capability to build quality web applications at scale.</p>
+  <div class="projects-grid" aria-live="polite">
+    <article class="project-card" tabindex="0" aria-label="Project: Portfolio Website">
+      <img src="Images/FRONT PAGE/Portfoliopng.png" alt="Portfolio Website Screenshot" class="project-image" loading="lazy" />
+      <div class="project-content">
+        <h3 class="project-title">Portfolio Website</h3>
+        <p class="project-desc">Responsive portfolio site built with React and TailwindCSS demonstrating skills and projects with fast, accessible UI.</p>
+        <div class="project-links">
+          <a href="https://github.com/ed12134/Ian_Base-main/tree/main/Ian_Base-main" target="_blank" rel="noopener" class="project-link" aria-label="View Portfolio Website GitHub Repository">GitHub</a>
+          <a href="https://janedoe.dev" target="_blank" rel="noopener" class="project-link" aria-label="Visit Portfolio Website Live Demo">Live Demo</a>
+        </div>
       </div>
-    </section>
+    </article>
+
+    <article class="project-card" tabindex="0" aria-label="Project: Task Manager App">
+      <img src="Images/FRONT PAGE/DATATRACK.png" alt="Task Manager App Screenshot" class="project-image" loading="lazy" />
+      <div class="project-content">
+        <h3 class="project-title">DATATRACK</h3>
+        <p class="project-desc">A simple CRUD that converts file into QR code. To have a simple and paperless transactions.</p>
+        <div class="project-links">
+          <a href="https://github.com/ed12134/Ian_Base-main/tree/main/Ian_Base-main" target="_blank" rel="noopener" class="project-link" aria-label="View Task Manager App GitHub Repository">GitHub</a>
+          <a href="https://task.janedoe.dev" target="_blank" rel="noopener" class="project-link" aria-label="Visit Task Manager App Live Demo">Live Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card" tabindex="0" aria-label="Project: Blog Platform">
+      <img src="Images/FRONT PAGE/UCU MOCKUP.png" alt="Blog Platform Screenshot" class="project-image" loading="lazy" />
+      <div class="project-content">
+        <h3 class="project-title">UCU Landing Page</h3>
+        <p class="project-desc">A responsive university website built with HTML, CSS, JavaScript, and Bootstrap, featuring a modern design, smooth navigation, and key sections for programs, admissions, and campus updates.</p>
+        <div class="project-links">
+          <a href="https://github.com/ed12134/Ian_Base-main/tree/main/Ian_Base-main" target="_blank" rel="noopener" class="project-link" aria-label="View Blog Platform GitHub Repository">GitHub</a>
+          <a href="https://blog.janedoe.dev" target="_blank" rel="noopener" class="project-link" aria-label="Visit Blog Platform Live Demo">Live Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card" tabindex="0" aria-label="Project: Blog Platform">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Blog Platform Screenshot" class="project-image" loading="lazy" />
+      <div class="project-content">
+        <h3 class="project-title">Blog Platform</h3>
+        <p class="project-desc">Custom CMS and blog platform with markdown support and SEO optimization built with Next.js.</p>
+        <div class="project-links">
+          <a href="https://github.com/ed12134/Ian_Base-main/tree/main/Ian_Base-main" target="_blank" rel="noopener" class="project-link" aria-label="View Blog Platform GitHub Repository">GitHub</a>
+          <a href="https://blog.janedoe.dev" target="_blank" rel="noopener" class="project-link" aria-label="Visit Blog Platform Live Demo">Live Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card" tabindex="0" aria-label="Project: Blog Platform">
+      <img src="Images/FRONT PAGE/BUZZTRACK.png" alt="Blog Platform Screenshot" class="project-image" loading="lazy" />
+      <div class="project-content">
+        <h3 class="project-title">BUZZTRACK</h3>
+        <p class="project-desc">An Iot Bee enabled Monitoring System build in HTML, CSS, JavaScript, and C++ and MySQL for backend. Also Deploy on hosting sites.</p>
+        <div class="project-links">
+          <a href="https://github.com/ed12134/Ian_Base-main/tree/main/Ian_Base-main" target="_blank" rel="noopener" class="project-link" aria-label="View Blog Platform GitHub Repository">GitHub</a>
+          <a href="https://blog.janedoe.dev" target="_blank" rel="noopener" class="project-link" aria-label="Visit Blog Platform Live Demo">Live Demo</a>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+
+</section>
 
     <section id="contact" role="region" aria-label="Contact Section" tabindex="0">
       <h2>Contact Me</h2>
@@ -335,16 +331,26 @@
       </form>
     </section>
   </main>
+
+
+  <footer>
+    <div class="social-links" role="region" aria-label="Social Media Links">
+      <a href="https://github.com/ed12134" target="_blank" rel="noopener" aria-label="GitHub Profile" tabindex="0">🐙</a>
+      <a href="https://www.linkedin.com/in/edrian-aguilar-0b2007270/" target="_blank" rel="noopener" aria-label="LinkedIn Profile" tabindex="0">🔗</a>
+      <a href="https://www.instagram.com/ian._cruz/#" target="_blank" rel="noopener" aria-label="Twitter Profile" tabindex="0">ℹ️</a>
+    </div>
+    &copy; 2025 Ian_Cruz. All rights reserved.
+  </footer>
   <script>
-    
-// Updated smooth scroll script to exclude external links
+
+    // Updated smooth scroll script to exclude external links
     document.querySelectorAll('nav a').forEach(link => {
       link.addEventListener('click', e => {
         // Skip if it's an external link or has target="_blank"
         if (link.href.startsWith('http') || link.target === '_blank' || link.getAttribute('href').startsWith('mailto:')) {
           return;
         }
-        
+
         e.preventDefault();
         const targetId = link.getAttribute('href').substring(1);
         const target = document.getElementById(targetId);
@@ -358,7 +364,7 @@
     // Theme toggler: toggle dark/light theme with localStorage persistence
     const themeToggleBtn = document.getElementById('themeToggle');
     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    
+
     function setTheme(theme) {
       if (theme === 'dark') {
         document.documentElement.setAttribute('data-theme', 'dark');
@@ -371,13 +377,13 @@
       }
       localStorage.setItem('theme', theme);
     }
-    
+
     function toggleTheme() {
-      const currentTheme = localStorage.getItem('theme') || 
+      const currentTheme = localStorage.getItem('theme') ||
                          (prefersDarkScheme.matches ? 'dark' : 'light');
       setTheme(currentTheme === 'dark' ? 'light' : 'dark');
     }
-    
+
     // Initialize theme
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
@@ -387,7 +393,7 @@
     } else {
       setTheme('light');
     }
-    
+
     themeToggleBtn.addEventListener('click', toggleTheme);
 
     // Contact form submission handler
@@ -413,60 +419,4 @@
       alert('Thank you for reaching out, ' + name + '! Your message has been received.');
       form.reset();
     }
-        // Certificate Modal functionality
-    document.addEventListener('DOMContentLoaded', function() {
-      // Get the modal
-      const modal = document.getElementById("certificateModal");
-      
-      // Get all view certificate buttons
-      const viewButtons = document.querySelectorAll(".view-certificate");
-      
-      // Get the modal elements
-      const modalImg = document.getElementById("modalCertificateImage");
-      const modalTitle = document.getElementById("modalTitle");
-      const modalIssuer = document.getElementById("modalIssuer");
-      const modalDate = document.getElementById("modalDate");
-      const closeBtn = document.querySelector(".close");
-      
-      // When user clicks a view certificate button
-      viewButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
-          e.preventDefault();
-          modal.style.display = "block";
-          modalImg.src = this.getAttribute('data-image');
-          modalImg.alt = this.getAttribute('data-title') + ' Certificate';
-          modalTitle.textContent = this.getAttribute('data-title');
-          modalIssuer.textContent = this.getAttribute('data-issuer');
-          modalDate.textContent = this.getAttribute('data-date');
-        });
-      });
-      
-      // When user clicks on (x), close the modal
-      closeBtn.onclick = function() {
-        modal.style.display = "none";
-      }
-      
-      // When user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-      
-      // Close modal when pressing Escape key
-      document.addEventListener('keydown', function(event) {
-        if (event.key === "Escape" && modal.style.display === "block") {
-          modal.style.display = "none";
-        }
-      });
-    });
   </script>
-
-  <footer>
-    <div class="social-links" role="region" aria-label="Social Media Links">
-      <a href="https://github.com/ed12134" target="_blank" rel="noopener" aria-label="GitHub Profile" tabindex="0">🐙</a>
-      <a href="https://www.linkedin.com/in/edrian-aguilar-0b2007270/" target="_blank" rel="noopener" aria-label="LinkedIn Profile" tabindex="0">🔗</a>
-      <a href="https://www.instagram.com/ian._cruz/#" target="_blank" rel="noopener" aria-label="Twitter Profile" tabindex="0">ℹ️</a>
-    </div>
-    &copy; 2025 Ian_Cruz. All rights reserved.
-  </footer>
